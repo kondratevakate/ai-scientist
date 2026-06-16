@@ -1,0 +1,26 @@
+# Local third-party snapshots. Keep URLs/commits in code-repos.md instead.
+open-source/
+
+# Raw database/API exports may include third-party abstracts or source terms.
+searches/
+
+# Local environment and credentials
+.env
+.env.*
+*.key
+*.pem
+
+# Python and tooling caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
