@@ -1,7 +1,7 @@
 ---
 title: PRISMA systematic review protocol
 created: 2026-06-05
-updated: 2026-06-15
+updated: 2026-07-01
 authority: working
 freshness: tentative
 ---
@@ -14,7 +14,7 @@ AI Scientist Systems and Autonomous Scientific Discovery Agents: A Systematic Re
 
 Quality requirements:
 
-This protocol is governed by `systematic-review-requirements-2026.md`, which defines the 2026 standards layer for PRISMA/PRISMA-ScR reporting, source authority, risk-of-bias logic, reproducibility grading, and AI-assisted workflow disclosure.
+This protocol is governed by `protocol/systematic-review-requirements-2026.md`, which defines the 2026 standards layer for PRISMA/PRISMA-ScR reporting, source authority, risk-of-bias logic, reproducibility grading, and AI-assisted workflow disclosure.
 
 ## Review type
 
@@ -87,9 +87,9 @@ Databases / search surfaces:
 Seed repositories / bibliographies:
 
 - `awesome-agents4science`
-- `source-inventory.md`
-- `bibliography-backlog.md`
-- `company-article-code-blog-leads.md`
+- `registers/source-inventory.md`
+- `registers/bibliography-backlog.md`
+- `sources/company-article-code-blog-leads.md`
 - references from Co-Scientist, Robin, Virtual Lab, AI Scientist, ScienceAgentBench, AstaBench, BixBench, MLE-Bench, PaperBench.
 
 ## Search strings
@@ -284,20 +284,20 @@ Current seed state:
 
 | Stage | Count | Notes |
 |---|---:|---|
-| Seed source rows in source inventory | 36 | Includes papers, blogs, repos, datasets, and 2026-06-15 additions; some rows are infrastructure/context. |
+| Seed source rows in source inventory | 38 | Includes papers, blogs, repos, datasets, 2026-06-15 additions, and 2026-07-01 Anthropic product sources; some rows are infrastructure/context. |
 | Local source snapshots | 29 | Stored under `open-source`. |
-| Unified records v0.2 | 66 | See `prisma-records.md`; includes verified, pending, appendix, and exclusion-rule records. |
-| Records after initial deduplication | 63 | Three exclusion-rule rows are not counted as eligible records. See `prisma-deduplication-log.md`; newly promoted records still need formal full-text/code extraction. |
+| Unified records v0.3 | 67 | See `registers/prisma-records.md`; includes verified, pending, appendix, and exclusion-rule records. |
+| Records after initial deduplication | 64 | Three exclusion-rule rows are not counted as eligible records. See `registers/prisma-deduplication-log.md`; newly promoted records still need formal full-text/code extraction. |
 | Records excluded from core evidence | 3 rules + appendix items | Product/news/foundation-model-only sources remain context unless linked to primary evidence. |
-| Records included for full-text/code review | 30 | Queue in `prisma-screening-log.md`: Tier A systems, benchmark/eval backbone, integrity sources, and 2026-06-15 promoted candidates. |
+| Records included for full-text/code review | 30 | Queue in `registers/prisma-screening-log.md`: Tier A systems, benchmark/eval backbone, integrity sources, and 2026-06-15 promoted candidates. |
 | Core systems included | 10 | Co-Scientist, Robin, Virtual Lab, AI Scientist, AI Scientist v2, AutoScientists, Coscientist, ERA, Medical AI Scientist, EvoScientist. |
 | Benchmark/eval sources included | 10 | ScienceAgentBench, AstaBench, BixBench, MLE-Bench, PaperBench/frontier-evals, Aviary, LDP, Asta baselines, omics AI scientist benchmark, SoundnessBench. |
-| Appendix/context sources | 8+ | Product, market, policy, and non-agentic infrastructure context. |
+| Appendix/context sources | 9+ | Product, market, policy, and non-agentic infrastructure context, including Claude Science. |
 
 ## Immediate next steps
 
 1. Normalize remaining ToolUniverse candidates into PRISMA screening records and controlled include/exclude reasons.
 2. Re-run arXiv, Semantic Scholar, OpenAlex, and Europe PMC with database-specific query syntax.
-3. Pull missing high-priority benchmark repos from `awesome-agents4science-triage.md`.
+3. Pull missing high-priority benchmark repos from `sources/awesome-agents4science-triage.md`.
 4. Run Tier A repo audits first.
 5. Fill expanded extraction forms for Robin, Co-Scientist, ERA, Virtual Lab, AI Scientist, Coscientist, Medical AI Scientist, EvoScientist, SoundnessBench, and the key critique papers.

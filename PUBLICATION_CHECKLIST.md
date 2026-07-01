@@ -35,7 +35,7 @@ Use this checklist before publishing the compilation.
 - [ ] Every promoted source has a URL or identifier.
 - [ ] Tentative claims are marked tentative.
 - [ ] Vendor/product claims are separated from primary evidence.
-- [ ] AI-assisted steps are logged in `ai-assistance-log.md`.
+- [ ] AI-assisted steps are logged in `logs/ai-assistance-log.md`.
 - [ ] Third-party repositories are represented by URL/commit metadata rather
       than included snapshots.
 

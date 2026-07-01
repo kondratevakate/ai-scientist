@@ -16,7 +16,7 @@ Find sources where a large company or large research lab has at least two of:
 - peer-reviewed or arXiv paper
 - public code / dataset / benchmark repository
 
-Promote to `source-inventory.md` only after checking the paper, code, license, and relevance to AI scientist / autonomous discovery.
+Promote to `registers/source-inventory.md` only after checking the paper, code, license, and relevance to AI scientist / autonomous discovery.
 
 ## High-confidence triplets
 

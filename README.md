@@ -2,7 +2,7 @@
 title: AI Scientist systematic review
 status: working
 created: 2026-06-05
-updated: 2026-06-15
+updated: 2026-07-01
 authority: working
 freshness: tentative
 ---
@@ -24,24 +24,38 @@ where the claims are weak.
 
 Start here:
 
-1. `prisma-records.md` - canonical record register.
-2. `review-matrix.md` - compact comparison of core systems and critique papers.
-3. `synthesis-taxonomy.md` - how the field is grouped.
-4. `extraction-forms.md` - fields to use when extracting a paper/repository.
-5. `search-execution-log.md` - what searches were run and what is still missing.
-6. `code-repos.md` - third-party repositories that were inspected locally, with
+1. `registers/prisma-records.md` - canonical record register.
+2. `synthesis/review-matrix.md` - compact comparison of core systems and critique papers.
+3. `synthesis/synthesis-taxonomy.md` - how the field is grouped.
+4. `protocol/extraction-forms.md` - fields to use when extracting a paper/repository.
+5. `logs/search-execution-log.md` - what searches were run and what is still missing.
+6. `sources/code-repos.md` - third-party repositories that were inspected locally, with
    provenance notes.
 
 Suggested workflow:
 
-1. Pick a record from `prisma-screening-log.md`.
+1. Pick a record from `registers/prisma-screening-log.md`.
 2. Read the primary paper/repository.
-3. Fill the relevant fields from `extraction-forms.md`.
-4. Update `review-matrix.md` only after source verification.
-5. Keep AI-assisted steps in `ai-assistance-log.md`.
+3. Fill the relevant fields from `protocol/extraction-forms.md`.
+4. Update `synthesis/review-matrix.md` only after source verification.
+5. Keep AI-assisted steps in `logs/ai-assistance-log.md`.
 
 Do not treat tentative rows as final evidence. Many records are still pending
 full-text or code audit.
+
+## Repository structure
+
+```text
+.
+├── protocol/    # review protocol, requirements, eligibility, extraction forms
+├── registers/   # PRISMA records, screening, deduplication, source inventory
+├── synthesis/   # review matrix, taxonomy, primary notes, critique synthesis
+├── sources/     # repository/source audits, watchlists, market/context tracking
+├── logs/        # search execution and AI-assistance logs
+├── README.md
+├── LICENSE
+└── public-domain / third-party governance files
+```
 
 ## Purpose
 
@@ -58,11 +72,13 @@ Success for the current phase: turn incoming resources into a clean source inven
 
 ## Current state
 
-The project folder is initialized. The first source batch has been logged in `source-inventory.md`. Primary notes for Co-Scientist and Robin are in `primary-paper-notes.md`; broader candidate sources are in `bibliography-backlog.md`; market/lab tracking is separated into `appendix-labs-and-market-watch.md`; cloned repositories are indexed in `code-repos.md`.
+The project folder is initialized. The first source batch has been logged in `registers/source-inventory.md`. Primary notes for Co-Scientist and Robin are in `synthesis/primary-paper-notes.md`; broader candidate sources are in `registers/bibliography-backlog.md`; market/lab tracking is separated into `sources/appendix-labs-and-market-watch.md`; cloned repositories are indexed in `sources/code-repos.md`.
 
-The 2026 quality and AI-assistance requirements layer is defined in `systematic-review-requirements-2026.md`. It constrains the protocol with PRISMA/PRISMA-ScR, Cochrane/JBI/Campbell, AMSTAR 2, ROBIS, GRADE-style evidence certainty, reproducibility grading, and AI-use disclosure requirements.
+The 2026 quality and AI-assistance requirements layer is defined in `protocol/systematic-review-requirements-2026.md`. It constrains the protocol with PRISMA/PRISMA-ScR, Cochrane/JBI/Campbell, AMSTAR 2, ROBIS, GRADE-style evidence certainty, reproducibility grading, and AI-use disclosure requirements.
 
-Update 2026-06-15: the PRISMA register is at v0.2 with 66 records. Seven high-priority sources were promoted from ToolUniverse/targeted verification into screening: Medical AI Scientist, EvoScientist, omics AI scientist benchmark, SoundnessBench, AI Scientists Fail Without Strong Implementation Capability, Hidden Pitfalls of AI Scientist Systems, and Agentic AI Scientists Are Not Built For Autonomous Scientific Discovery. `ai-assistance-log.md` was added, and `extraction-forms.md` now includes benchmark false-negative risk, trajectory, cost, sandbox, tool-permission, and skill/tool governance fields.
+Update 2026-06-15: the PRISMA register is at v0.2 with 66 records. Seven high-priority sources were promoted from ToolUniverse/targeted verification into screening: Medical AI Scientist, EvoScientist, omics AI scientist benchmark, SoundnessBench, AI Scientists Fail Without Strong Implementation Capability, Hidden Pitfalls of AI Scientist Systems, and Agentic AI Scientists Are Not Built For Autonomous Scientific Discovery. `logs/ai-assistance-log.md` was added, and `protocol/extraction-forms.md` now includes benchmark false-negative risk, trajectory, cost, sandbox, tool-permission, and skill/tool governance fields.
+
+Update 2026-07-01: the repository was reorganized into `protocol/`, `registers/`, `synthesis/`, `sources/`, and `logs/`. Claude Science was added as an appendix/context record for Anthropic's scientific workbench product, separate from peer-reviewed core AI Scientist evidence.
 
 ## Public-domain compilation status
 
@@ -116,4 +132,4 @@ Initial blockers / open loops:
 
 ## Next action
 
-Promote backlog items into `source-inventory.md` only after source verification, starting with Sakana AI Scientist, Stanford Virtual Lab Nature paper, FutureHouse Kosmos, ToolUniverse/Biomni/Paper2Agent, and benchmark papers.
+Promote backlog items into `registers/source-inventory.md` only after source verification, starting with Sakana AI Scientist, Stanford Virtual Lab Nature paper, FutureHouse Kosmos, ToolUniverse/Biomni/Paper2Agent, and benchmark papers.

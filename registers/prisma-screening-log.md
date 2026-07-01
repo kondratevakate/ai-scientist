@@ -1,7 +1,7 @@
 ---
 title: PRISMA screening log
 created: 2026-06-05
-updated: 2026-06-15
+updated: 2026-07-01
 authority: working
 freshness: tentative
 version: v0.2
@@ -76,6 +76,7 @@ Reviewer: Codex + user-provided source seeds.
 | Pheiron Predictions | include-context | Prospective prediction claims need rendered extraction and outcome validation. |
 | Gemini for Science | include-context | Product umbrella; primary sources are Co-Scientist and ERA. |
 | Anthropic Life Sciences | include-context | Enterprise assistant/connectors, not autonomous discovery evidence. |
+| Claude Science | include-context | Anthropic scientific workbench; infrastructure/product signal, not autonomous-discovery evidence. |
 | Microsoft MatterGen/MatterSim/BioEmu | include-context + include-code-audit | Executable science infrastructure; relevant substrate, not autonomous scientist. |
 | NVIDIA BioNeMo | include-context + include-code-audit | Platform infrastructure for drug discovery. |
 | Lila / Periodic / Unreasonable / Edison funding news | include-context | Market watch only. |
@@ -93,7 +94,7 @@ Reviewer: Codex + user-provided source seeds.
 
 ## ToolUniverse candidate batch, 2026-06-06
 
-Source file: `tooluniverse-candidates.md`
+Source file: `registers/tooluniverse-candidates.md`
 
 Status: `pending-dedup` and `pending-title-abstract`.
 
@@ -139,7 +140,7 @@ These records were promoted from the ToolUniverse candidate layer and targeted w
 | Hidden Pitfalls of AI Scientist Systems | R065 | include-integrity | Direct failure-mode audit requiring trace logs and code for evaluation. |
 | Agentic AI Scientists Are Not Built For Autonomous Scientific Discovery | R066 | include-integrity | Conceptual critique and design recommendations for autonomy claims. |
 
-Next screening action: continue matching the remaining ToolUniverse candidates against R001-R066, then assign include/exclude reasons using `inclusion-exclusion-criteria.md`.
+Next screening action: continue matching the remaining ToolUniverse candidates against R001-R066, then assign include/exclude reasons using `protocol/inclusion-exclusion-criteria.md`.
 
 ## Include/exclude decision fields to complete
 

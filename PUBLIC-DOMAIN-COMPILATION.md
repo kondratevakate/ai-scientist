@@ -45,7 +45,7 @@ Recommended GitHub state:
 - exclude: `open-source/`
 - exclude by default: `searches/`
 - keep third-party repositories represented by URLs, commit hashes, and audit
-  notes in `code-repos.md`
+  notes in `sources/code-repos.md`
 
 ## Contributor Rule
 

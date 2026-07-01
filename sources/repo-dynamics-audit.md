@@ -119,7 +119,7 @@ Tier D - early / low-adoption / source-discovery:
 
 ## Missing but important
 
-From `awesome-agents4science-triage.md`, these should be pulled next if scope includes benchmarks broadly:
+From `sources/awesome-agents4science-triage.md`, these should be pulled next if scope includes benchmarks broadly:
 
 - `allenai/discoverybench`
 - `scicode-bench/SciCode`

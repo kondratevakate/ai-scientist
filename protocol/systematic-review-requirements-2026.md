@@ -126,7 +126,7 @@ For each included system, assess:
 
 ## Evidence And Reproducibility Grades
 
-Use the existing `extraction-forms.md` levels, with this interpretation:
+Use the existing `protocol/extraction-forms.md` levels, with this interpretation:
 
 Evidence:
 
@@ -146,19 +146,19 @@ Reproducibility:
 
 Before final synthesis, the project should contain:
 
-- `systematic-review-protocol-prisma.md`
-- `systematic-review-requirements-2026.md`
-- `database-search-strategy.md`
-- `search-execution-log.md`
+- `protocol/systematic-review-protocol-prisma.md`
+- `protocol/systematic-review-requirements-2026.md`
+- `logs/database-search-strategy.md`
+- `logs/search-execution-log.md`
 - raw search exports under `searches/YYYY-MM-DD/`
-- `prisma-records.md`
-- `prisma-deduplication-log.md`
-- `prisma-screening-log.md`
-- `inclusion-exclusion-criteria.md`
-- `extraction-forms.md`
-- `ai-assistance-log.md`
+- `registers/prisma-records.md`
+- `registers/prisma-deduplication-log.md`
+- `registers/prisma-screening-log.md`
+- `protocol/inclusion-exclusion-criteria.md`
+- `protocol/extraction-forms.md`
+- `logs/ai-assistance-log.md`
 - filled extraction tables or per-source extraction notes
-- `repo-dynamics-audit.md` or equivalent repository audit table
+- `sources/repo-dynamics-audit.md` or equivalent repository audit table
 - final PRISMA flow counts
 - final limitations and AI-use disclosure section
 
@@ -167,7 +167,7 @@ Before final synthesis, the project should contain:
 - ToolUniverse search was executed under Python 3.12 via `uv`; remaining work is normalization, deduplication, and title/abstract screening for candidates not yet promoted.
 - OpenAlex query syntax needs repair.
 - arXiv and Semantic Scholar need reruns with rate limits/API keys or slower query execution.
-- AI-use logging now exists as `ai-assistance-log.md`; keep it updated for every future AI-assisted screening, extraction, or synthesis step.
+- AI-use logging now exists as `logs/ai-assistance-log.md`; keep it updated for every future AI-assisted screening, extraction, or synthesis step.
 - Final PRISMA checklist is not yet present.
 - Final source-to-claim traceability table is not yet present.
-- Open-source benchmark/tooling critique is tracked in `requirements-critique.md`; its required fields have been folded into `extraction-forms.md`, but filled extractions still need to use them consistently.
+- Open-source benchmark/tooling critique is tracked in `synthesis/requirements-critique.md`; its required fields have been folded into `protocol/extraction-forms.md`, but filled extractions still need to use them consistently.

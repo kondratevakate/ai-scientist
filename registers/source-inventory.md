@@ -1,7 +1,7 @@
 ---
 title: AI Scientist source inventory
 created: 2026-06-05
-updated: 2026-06-15
+updated: 2026-07-01
 authority: working
 freshness: tentative
 ---
@@ -54,6 +54,13 @@ freshness: tentative
 | https://arxiv.org/abs/2509.08713 | ArXiv paper + companion repo candidate | working | tentative | Critical failure-mode audit | "The More You Automate, the Less You See" identifies benchmark selection, data leakage, metric misuse, and post-hoc selection bias in AI scientist workflows; emphasizes trace logs and code. | Pull/inspect companion repo, extract controlled experiments, systems assessed, and trace-log requirements. |
 | https://arxiv.org/abs/2605.08956 | ArXiv position paper | working | tentative | Conceptual critique of autonomy claims | "Agentic AI Scientists Are Not Built For Autonomous Scientific Discovery" argues current systems function as co-scientists and need simulation verifiers, persistent world models, and preregistration. | Use in discussion/risk section; separate conceptual claims from empirical performance evidence. |
 
+## Batch 2026-07-01
+
+| Source | Type | Authority | Freshness | Role in review | Initial notes | Follow-up |
+|---|---|---:|---:|---|---|---|
+| https://www.anthropic.com/news/claude-science-ai-workbench | Official company product announcement | working | confirmed | Anthropic scientific workbench / infrastructure context | Claude Science is described as a customizable scientific workbench that integrates research tools, compute, rich artifacts, figures, manuscripts, and reproducible outputs. It is product/infrastructure evidence, not by itself peer-reviewed evidence of autonomous scientific discovery. | Extract product architecture, availability, connectors/tools, artifact/reproducibility model, and any linked evaluation or case studies. |
+| https://www.anthropic.com/news/claude-for-life-sciences | Official company product announcement | working | confirmed | Anthropic life-sciences assistant/connectors context | Claude for Life Sciences adds scientific connectors, Agent Skills, prompt-library support, and life-sciences workflows. It remains context until tied to independent benchmark, code, or primary scientific validation. | Keep linked to R052/R067; separate product claims from independently validated evidence. |
+
 ## Authority key
 
 - authoritative: peer-reviewed article, official dataset/spec, primary benchmark with sufficient methods.
@@ -80,6 +87,7 @@ Product / applied platforms:
 - Google DeepMind AlphaEvolve
 - FutureHouse Platform
 - FutureHouse Robin
+- Anthropic Claude Science / Claude for Life Sciences
 
 Open implementation artifacts:
 

@@ -1,23 +1,24 @@
 ---
 title: PRISMA records register
 created: 2026-06-05
-updated: 2026-06-15
+updated: 2026-07-01
 authority: working
 freshness: tentative
-version: v0.2
+version: v0.3
 ---
 
 # PRISMA records register
 
 This is the unified seed register for the systematic review. It merges records from:
 
-- `source-inventory.md`
-- `bibliography-backlog.md`
-- `awesome-agents4science-triage.md`
-- `company-article-code-blog-leads.md`
-- `code-repos.md`
-- `tooluniverse-candidates.md`
+- `registers/source-inventory.md`
+- `registers/bibliography-backlog.md`
+- `sources/awesome-agents4science-triage.md`
+- `sources/company-article-code-blog-leads.md`
+- `sources/code-repos.md`
+- `registers/tooluniverse-candidates.md`
 - targeted web verification on 2026-06-15
+- targeted Anthropic product verification on 2026-07-01
 
 Status key:
 
@@ -124,6 +125,7 @@ Status key:
 | R057 | Unreasonable Labs | market/company | Company/funding context | Not checked | appendix | Market watch only. |
 | R058 | U.S. Genesis Mission | policy | EO/DOE pages pending | Not applicable | appendix | Policy/infrastructure context, not system evidence. |
 | R059 | UK AI for Science Strategy | policy | UK gov/DeepMind pages pending | Not applicable | appendix | Policy context, not system evidence. |
+| R067 | Claude Science | company product/workbench announcement | Anthropic official news, 2026-06-30 | Product, no public code/repo verified | appendix | Scientific workbench for tools, compute, artifacts, figures, and manuscripts; important infrastructure signal but not peer-reviewed autonomous-scientist evidence. |
 
 ## Exclude from core for now
 
@@ -133,7 +135,7 @@ Status key:
 | X002 | Funding/news articles without primary technical source | news | varies | exclude-core | Use only for market/context appendix. |
 | X003 | Unofficial Kosmos third-party repos | GitHub | unofficial | exclude-core | Do not treat as primary evidence. |
 
-## v0.2 counts
+## v0.3 counts
 
 | Bucket | Count |
 |---|---:|
@@ -141,6 +143,6 @@ Status key:
 | Included benchmark | 10 |
 | Included infrastructure | 13 |
 | Included integrity | 7 |
-| Appendix/context | 8 |
+| Appendix/context | 9 |
 | Pending verification | 18 |
 | Exclude-core rules | 3 |

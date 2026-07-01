@@ -19,7 +19,7 @@ Local source snapshots are stored under:
 `D:\projects\02_academia\ai-scientist\open-source`
 
 These snapshots are for private inspection and reproducibility notes. They
-should not be included in a clean public-domain release. Use `code-repos.md` to
+should not be included in a clean public-domain release. Use `sources/code-repos.md` to
 publish repository names, URLs, and commit provenance instead.
 
 ## Raw Search Exports

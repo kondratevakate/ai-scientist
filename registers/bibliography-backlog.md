@@ -9,7 +9,7 @@ source_basis: user-provided bibliography, pending verification
 
 # Bibliography backlog
 
-This file stores candidate sources for the systematic review. Items here are not yet treated as confirmed evidence. They should be promoted into `source-inventory.md` only after verification against primary papers, official lab pages, benchmark repos, or peer-reviewed / arXiv records.
+This file stores candidate sources for the systematic review. Items here are not yet treated as confirmed evidence. They should be promoted into `registers/source-inventory.md` only after verification against primary papers, official lab pages, benchmark repos, or peer-reviewed / arXiv records.
 
 ## Inclusion rule
 
@@ -21,7 +21,7 @@ Core review sources require at least one of:
 - wet-lab / experimental validation with methods
 - official lab page pointing to primary evidence
 
-Market claims without one of these remain in `appendix-labs-and-market-watch.md`.
+Market claims without one of these remain in `sources/appendix-labs-and-market-watch.md`.
 
 ## Core AI Scientist / autonomous discovery
 
@@ -31,7 +31,7 @@ Market claims without one of these remain in `appendix-labs-and-market-watch.md`
 | Sakana critique | Joeran Beel, Kan, Baumgart | "Evaluating Sakana's AI Scientist for Autonomous Research" | Critical counterweight: novelty assessment failures, coding failures, weak experiments, citation issues | Pending |
 | FutureHouse / Edison Scientific - Kosmos | Sam Rodriques, Andrew D. White, Ludovico Mitchener, Michaela Hinks, Tom Rainforth, Kosmos team | "Kosmos: An AI Scientist for Autonomous Discovery" | Long-horizon research agents: literature, code, data analysis, world model, multi-agent trajectories | Pending |
 | Stanford Virtual Lab | James Zou, Kyle Swanson, Wesley Wu, Nash Bulaong, John E. Pak | "The Virtual Lab of AI agents designs new SARS-CoV-2 nanobodies", Nature 2025 | Validated virtual-lab case: AI-agent lab leading to nanobody design and wet-lab validation | Pending |
-| Google DeepMind Co-Scientist | Juraj Gottweis, Vivek Natarajan, Google Research / DeepMind | Nature 2026 "Accelerating scientific discovery with Co-Scientist"; Google Research / DeepMind blogs | Multi-agent hypothesis generation and ranking with biomedical validation | Partially verified in `primary-paper-notes.md` |
+| Google DeepMind Co-Scientist | Juraj Gottweis, Vivek Natarajan, Google Research / DeepMind | Nature 2026 "Accelerating scientific discovery with Co-Scientist"; Google Research / DeepMind blogs | Multi-agent hypothesis generation and ranking with biomedical validation | Partially verified in `synthesis/primary-paper-notes.md` |
 | CMU Coscientist | Daniil A. Boiko, Robert MacKnight, Ben Kline, Gabe Gomes | "Autonomous chemical research with large language models", Nature 2023 | Early tool-using chemistry agent with lab automation | Pending |
 | OpenAI / Retro Biosciences | OpenAI for Science, Retro Biosciences team | "Accelerating life sciences research with Retro Biosciences" | Frontier-lab deployment; GPT-4b micro and Yamanaka factor variants | Pending; not peer-reviewed by default |
 

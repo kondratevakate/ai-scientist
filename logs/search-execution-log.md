@@ -1,7 +1,7 @@
-﻿---
+---
 title: Search execution log
 created: 2026-06-05
-updated: 2026-06-15
+updated: 2026-07-01
 authority: working
 freshness: tentative
 ---
@@ -122,13 +122,13 @@ Observed output:
 Limitations:
 
 - Semantic Scholar rate-limited after the first query (`429`).
-- Raw ToolUniverse exports still need normalization into `prisma-records.md`, formal deduplication, and title/abstract screening decisions.
+- Raw ToolUniverse exports still need normalization into `registers/prisma-records.md`, formal deduplication, and title/abstract screening decisions.
 
 ## Targeted Follow-Up Verification, 2026-06-15
 
 Purpose:
 
-Verify the highest-priority ToolUniverse candidates and reviewer-surfaced critique/evaluation sources before promoting them into `prisma-records.md`.
+Verify the highest-priority ToolUniverse candidates and reviewer-surfaced critique/evaluation sources before promoting them into `registers/prisma-records.md`.
 
 Promoted records:
 
@@ -147,6 +147,25 @@ Decision:
 - Promoted these records to full-text/code screening where appropriate.
 - Kept freshness as `tentative`; promotion is not full extraction.
 - Remaining ToolUniverse candidates still need deduplication and title/abstract screening.
+
+## Targeted Anthropic Product Verification, 2026-07-01
+
+Purpose:
+
+Verify whether Anthropic has a current scientific workbench/product relevant to AI Scientist infrastructure.
+
+Verified sources:
+
+| Source | Surface | PRISMA record |
+|---|---|---|
+| Claude Science, an AI workbench for scientists | Official Anthropic news, 2026-06-30 | R067 |
+| Claude for Life Sciences | Official Anthropic news | R052/R067 context |
+
+Decision:
+
+- Add Claude Science as appendix/context infrastructure evidence.
+- Do not classify Claude Science as `include-core` unless independent benchmark, code, or primary scientific validation becomes available.
+- Keep Claude for Life Sciences as enterprise/connectors context.
 
 ## Next Required Search Steps
 

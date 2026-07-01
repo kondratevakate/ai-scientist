@@ -8,7 +8,7 @@ freshness: tentative
 
 # Requirements Critique
 
-Purpose: pressure-test `systematic-review-requirements-2026.md` against the strongest local open-source evidence in `open-source/`.
+Purpose: pressure-test `protocol/systematic-review-requirements-2026.md` against the strongest local open-source evidence in `open-source/`.
 
 This is not a claim that these authors reviewed this project. It is a structured critique derived from the requirements, warnings, and evaluation practices visible in their local repositories.
 
@@ -169,7 +169,7 @@ Required change:
 
 ## Updates Needed In Requirements
 
-Add these fields to `extraction-forms.md` and/or `systematic-review-requirements-2026.md`:
+Add these fields to `protocol/extraction-forms.md` and/or `protocol/systematic-review-requirements-2026.md`:
 
 - `false_negative_risk`
 - `subject_matter_validation`
@@ -206,9 +206,9 @@ Add these fields to `extraction-forms.md` and/or `systematic-review-requirements
 
 Completed:
 
-- `ai-assistance-log.md` created.
-- `extraction-forms.md` extended with benchmark validity, trajectory, cost, sandbox, tool-permission, search-backend, and skill/tool governance fields.
-- Benchmark-quality and tool/skill governance addenda added to `extraction-forms.md`.
+- `logs/ai-assistance-log.md` created.
+- `protocol/extraction-forms.md` extended with benchmark validity, trajectory, cost, sandbox, tool-permission, search-backend, and skill/tool governance fields.
+- Benchmark-quality and tool/skill governance addenda added to `protocol/extraction-forms.md`.
 
 Still required:
 

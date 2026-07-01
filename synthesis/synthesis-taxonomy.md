@@ -1,7 +1,7 @@
 ---
 title: Synthesis taxonomy
 created: 2026-06-05
-updated: 2026-06-15
+updated: 2026-07-01
 authority: working
 freshness: tentative
 ---
@@ -62,7 +62,14 @@ This taxonomy is for organizing findings before narrative synthesis.
 - CHIME
 - NotebookLM / Literature Insights
 
-7. Foundation model / evaluator infrastructure
+7. Scientific workbenches / product infrastructure
+
+- Claude Science
+- Claude for Life Sciences
+- Gemini for Science
+- FutureHouse Platform
+
+8. Foundation model / evaluator infrastructure
 
 - MatterGen
 - MatterSim
@@ -71,7 +78,7 @@ This taxonomy is for organizing findings before narrative synthesis.
 - ESM / ESMFold
 - OMol25 / UMA
 
-8. Scientific integrity / review / safety
+9. Scientific integrity / review / safety
 
 - Agents4Science
 - AgentReview
