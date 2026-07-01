@@ -9,6 +9,40 @@ freshness: tentative
 
 # AI Scientist systematic review
 
+## What this repository is
+
+This repository is a public-domain working compilation for a systematic
+scoping review of AI Scientist systems: agents, benchmarks, tool ecosystems,
+and reproducibility evidence for automated or AI-assisted scientific research.
+
+It is not a software package and it is not an implementation of an AI
+scientist. Use it as a structured evidence map: what systems exist, what they
+claim, what evidence supports them, what code or benchmarks are available, and
+where the claims are weak.
+
+## How to use it
+
+Start here:
+
+1. `prisma-records.md` - canonical record register.
+2. `review-matrix.md` - compact comparison of core systems and critique papers.
+3. `synthesis-taxonomy.md` - how the field is grouped.
+4. `extraction-forms.md` - fields to use when extracting a paper/repository.
+5. `search-execution-log.md` - what searches were run and what is still missing.
+6. `code-repos.md` - third-party repositories that were inspected locally, with
+   provenance notes.
+
+Suggested workflow:
+
+1. Pick a record from `prisma-screening-log.md`.
+2. Read the primary paper/repository.
+3. Fill the relevant fields from `extraction-forms.md`.
+4. Update `review-matrix.md` only after source verification.
+5. Keep AI-assisted steps in `ai-assistance-log.md`.
+
+Do not treat tentative rows as final evidence. Many records are still pending
+full-text or code audit.
+
 ## Purpose
 
 Build a systematic review of AI systems for automated research / AI scientist workflows, with emphasis on:
