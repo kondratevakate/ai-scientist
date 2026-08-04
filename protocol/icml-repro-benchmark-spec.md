@@ -106,9 +106,10 @@ Whether compressing the agent's context window (compaction) preserves reproducti
 
 - **Clean test:** CAffNet arm2 (no compaction) vs arm2b (compaction), *same prompt*.
   Result: **compaction WORSE** (arm2 = 4 verified + 1 inconclusive; arm2b = 3 verified +
-  2 inconclusive → claim 4 regressed verified→inconclusive; `full_evidence_rate` 1.0→0.0).
+  2 inconclusive → claim 4 regressed verified→inconclusive; `full_evidence_rate` 0.8→0.6).
 - **Confounded test:** TBSyYj4VV6 arm2b also changed the *prompt* (v2.1 real-verification), so it
   is not a clean ablation (both original and arm2b = 6/6, but prompt covaries).
+- **Full write-up + tables:** `ai-scientist/synthesis/result-B-compaction.md`.
 - **Decision (locked, `DECISIONS.md` D2): compaction OFF** for the bundle. The rule rests on one
   clean data point (CAffNet); a 2nd clean compaction pilot is listed as optional before fully
   locking.
