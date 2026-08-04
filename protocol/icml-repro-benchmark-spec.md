@@ -122,7 +122,25 @@ versions is a third result axis.
 - v1 = original arm2 bundle prompts; v2.1 = `arm2_prompt_v2.1.txt` (real quantum-sim verification
   for TBSyYj4VV6, etc.).
 - The `benchmark_v1_prefed/` (18 complete) and `benchmark_v1_arm2b/` (10 frozen) runs span these
-  versions; the spec fixes *which* version applies to the full run (see Part 2 §3).
+  versions; the spec fixes *which* version applies to the full run (see Part 3 §3.6).
+- **Full write-up + tables:** `ai-scientist/synthesis/result-C-prompts-v1-v2.1.md` (pending).
+
+### Result D — Features predicting low reproducibility + hardening our paper (NEW)
+
+What paper features predict non-reproduction, and design rules to make *our* benchmark paper
+reproducible.
+
+- **Empirical (full 6,627-paper challenge corpus, `verdicts_live.json`):** 75.6% of attempted
+  papers NOT fully reproduced; 42.4% toy-contaminated. Strongest predictors: **no public
+  artifacts** (89% fail, full-ev 0.11) and **toy/proxy substitution** (70% toy). Verdict mix:
+  verified 48% / inconclusive 26% / toy 21% / falsified 4%.
+- **Prescriptive:** maps each failure mode to a design rule for our paper (ship runnable corpus+
+  judge+Trackio; pin model/prompts/seeds; run full 42-paper scale; canonical verdict vocabulary;
+  mandate mutation tests).
+- **Full write-up + tables:** `ai-scientist/synthesis/result-D-reproducibility-features.md`.
+- **Provenance caveat (stated in doc):** the corpus is the challenge leaderboard (eval model
+  `zai-org/GLM-5.2`), NOT our `hy3` benchmark — associations describe the challenge population and
+  are extrapolated to our design rules.
 
 ---
 
