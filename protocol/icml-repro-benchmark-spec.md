@@ -119,11 +119,15 @@ Whether compressing the agent's context window (compaction) preserves reproducti
 The agent prompt evolved (v1 → v2.1 real-verification wording). Comparing runs across prompt
 versions is a third result axis.
 
-- v1 = original arm2 bundle prompts; v2.1 = `arm2_prompt_v2.1.txt` (real quantum-sim verification
-  for TBSyYj4VV6, etc.).
-- The `benchmark_v1_prefed/` (18 complete) and `benchmark_v1_arm2b/` (10 frozen) runs span these
-  versions; the spec fixes *which* version applies to the full run (see Part 3 §3.6).
-- **Full write-up + tables:** `ai-scientist/synthesis/result-C-prompts-v1-v2.1.md` (pending).
+- v1 = original arm2 bundle prompt (permitted toy/reduced-scale proxies); v2.1 =
+  `arm2_prompt_v2.1.txt` (real verification, no "toy" for math claims, bans "no paper body"
+  excuse, mandates COMPACTION.md).
+- Evidence: all 18 `benchmark_v1_prefed/` logbooks contain "toy" claims (v1 policy); the clean
+  paired example is TBSyYj4VV6 arm2b (`logbook.md.bak_v1` toy → `logbook.md` 6/6 real Grover sim).
+- Prompt version was **not** logged per-run, so no broad v1-vs-v2.1 score table — the signal is
+  the toy-mention presence + the single paired TBSy case. v2.1 is the **intervention that attacks
+  the #1 failure mode from Result D** (toy substitution); hence the full-42 protocol locks v2.1.
+- **Full write-up + tables:** `ai-scientist/synthesis/result-C-prompts-v1-v2.1.md`.
 
 ### Result D — Features predicting low reproducibility + hardening our paper (NEW)
 
