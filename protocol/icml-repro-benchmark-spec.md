@@ -87,6 +87,10 @@ one fixed claim set.
 
 - **Why CAffNet `20hdQQQrA4`:** it is the *only* paper with all 4 arms executed
   (`pilot_4arm/20hdQQQrA4_{arm1,arm2,arm3,arm4}`). It is the reference validation.
+- **Full write-up + human-readable table:** `ai-scientist/synthesis/result-A-caffnet-4arm.md`.
+  Machine-readable table regenerated from `_score.json` →
+  `experiments/run03_hermes_leaf_pilot/docs/VALIDATION_TABLE_caffnet.csv`
+  (the original `VALIDATION_TABLE.xlsx` was an empty stub — rebuilt).
 - **Arms:**
   - arm1 — Hermes leaf (control)
   - arm2 — Hermes + 9 K-Dense scientific-agent-skills (primary workhorse)
