@@ -1,11 +1,11 @@
-# AI-scientist papers found in the ICML reproduction audit (2026-10-24)
+# AI-scientist papers at ML and vision venues, 2024-2026 (from the ICML reproduction audit, 2026-10-24)
 
 A validated list of papers about AI scientists and autonomous research agents, drawn from the paper sets of the
 ICML 2026 reproduction audit. Nothing is pushed; all commits are local.
 
 ## Where things are
 
-* This folder (`ai-scientist-survey/icml2026-validated-list/`) holds the code, codes and results:
+* This folder (`ai-scientist-survey/ml-venues-2024-2026-validated-list/`) holds the code, codes and results:
   * `PROTOCOL.md`: the keyword screen rule and Amendment 1 (validation codebook), both frozen before use.
   * `screen.py`: keyword screen; `code.py`: candidate pool, coder agreement, adjudication, validated list.
   * `CODER_PROMPT.md`: the blind coder prompt.
