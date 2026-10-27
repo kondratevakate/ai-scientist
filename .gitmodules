@@ -1,0 +1,6 @@
+[submodule "pipeline/instruments/logbook-judge"]
+	path = pipeline/instruments/logbook-judge
+	url = https://github.com/kondratevakate/repro-judge.git
+[submodule "pipeline/instruments/review-methodology"]
+	path = pipeline/instruments/review-methodology
+	url = https://github.com/kondratevakate/agentic-systematic-review.git

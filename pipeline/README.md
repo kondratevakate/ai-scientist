@@ -71,22 +71,32 @@ in one study. Numbering them would make the number lie about when they run.
 | Instrument | Called from | Where it lives |
 |---|---|---|
 | bibliography verification | Do (screening), Land (writing) | `studies/bib-verify`, own repo, Zenodo concept DOI and Software Heritage archive |
-| logbook judge | Do (reproduction), Close (verdict on own work) | `studies/repro-judge`, own repo, 9 commits, **no remote yet** |
-| review methodology | Do (review) | `studies/agentic-systematic-review`, own repo as of 2026-10-27, **no remote yet** |
+| logbook judge | Do (reproduction), Close (verdict on own work) | submodule at `pipeline/instruments/logbook-judge`, private repo `kondratevakate/repro-judge` |
+| review methodology | Do (review) | submodule at `pipeline/instruments/review-methodology`, private repo `kondratevakate/agentic-systematic-review` |
 | blind coding with adjudication | Do, and Map when screening a field | no packaged form; rebuilt by hand four times so far |
 | data contract: registry, manifest, lock | Freeze (access), Do (acquisition) | `C:\Projects\data`, policy in its `AGENTS.md`, `_paths.data_path()` |
 | novelty check | Map, and again before Freeze | no packaged form; see `map/` for worked examples |
 
-The instruments with their own repository are meant to attach here as git submodules, so
-that a frozen protocol can record which version of an instrument executed it. That needs
-a remote per instrument, and creating one is a publication step: it waits for the
-security pass and for an explicit decision, per repository, on private or public.
+An instrument attaches here as a git submodule, not as a copied directory, so that a
+frozen protocol can record which version of an instrument executed it. A submodule pins
+an exact commit, which is the property that matters: "coded with the judge at 189c19ac"
+is checkable, "coded with the judge" is not.
 
-`bib-verify` already has a remote and a DOI, so it is the one that can be attached first.
-`repro-judge` and `agentic-systematic-review` are version-controlled locally and are not
-attached yet. Attaching them with a local filesystem path instead would put a
-machine-specific path into `.gitmodules`, which then travels to the other laptop through
-Syncthing and breaks there; that is worse than waiting.
+Both are attached by their GitHub URL. A local filesystem path would also have worked on
+this machine and would have been quicker, but it writes a machine-specific path into
+`.gitmodules`, which then reaches the other laptop through Syncthing and fails there.
+
+Two consequences worth knowing:
+
+* Each attached instrument now exists twice on disk, as the standalone repository under
+  `studies/` and as the submodule checkout here. They are the same commit today; nothing
+  keeps them that way. Decide which one is the working copy and retire the other.
+* `git clone` of this repository without `--recurse-submodules` leaves both instrument
+  directories empty. `git submodule update --init` fills them.
+
+`bib-verify` is not attached yet. It is the only instrument with a public repository and
+a citable DOI, so attaching it is a decision about where its working copy should live
+rather than a plumbing step.
 
 Two instruments have no packaged form at all, and they are the two that have been
 rebuilt by hand most often. They are the obvious things to package next.
