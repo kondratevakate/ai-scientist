@@ -5,7 +5,7 @@ ICML 2026 reproduction audit. Nothing is pushed; all commits are local.
 
 ## Where things are
 
-* This folder (`ai-scientist-survey/ml-venues-2024-2026-validated-list/`) holds the code, codes and results:
+* This folder (`ai-scientist/ml-venues-2024-2026-validated-list/`) holds the code, codes and results:
   * `PROTOCOL.md`: the keyword screen rule and Amendment 1 (validation codebook), both frozen before use.
   * `screen.py`: keyword screen; `code.py`: candidate pool, coder agreement, adjudication, validated list.
   * `CODER_PROMPT.md`: the blind coder prompt.
@@ -15,7 +15,10 @@ ICML 2026 reproduction audit. Nothing is pushed; all commits are local.
   * `results/validated_summary.json`: counts; `results/papers.csv`, `results/summary.json`: the first keyword screen.
   * `work/` (git-ignored): coding sheets and candidate keys.
 * The same work, with its history, is on branch `ai-scientist-papers` of
-  `C:\Projects_academia\studies\icml\icml-repro-working` (local commits, not pushed). Its separate worktree was
+  `C:/Projects/02_academia/studies/icml-repro`. **That branch is on GitHub** (checked 2026-10-27,
+  `kondratevakate/icml-2026-repro`, tip `069103a7`), so this list is public, by way of that repository rather
+  than this one. An earlier version of this line said "local commits, not pushed"; that was true when it
+  was written and is not true now. Its separate worktree was
   removed on 2026-10-24; the branch keeps every commit.
 * Inputs are read from that repository's main checkout (git-ignored there): `verdict_audit/readiness/data/papers.json`
   (50,185 papers: ICLR 2025-2026, ICML 2025-2026, NeurIPS 2024-2026, CVPR 2024-2025, ICCV 2025, ECCV 2024 and 2026)

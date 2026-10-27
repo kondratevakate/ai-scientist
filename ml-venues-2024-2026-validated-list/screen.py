@@ -1,6 +1,6 @@
 """Screen all paper sets for AI-scientist / autonomous-research papers with the frozen rule in PROTOCOL.md.
 
-Reads the git-ignored inputs from the main checkout (MAIN_CHECKOUT, default the icml-repro-working folder).
+Reads the git-ignored inputs from the main checkout (MAIN_CHECKOUT, default studies/icml-repro).
 
 Usage: python screen.py   -> results/papers.csv, results/summary.json
 """
@@ -15,7 +15,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-MAIN = Path(os.environ.get("MAIN_CHECKOUT", r"C:\Projects\02_academia\studies\icml\icml-repro-working"))
+MAIN = Path(os.environ.get("MAIN_CHECKOUT", r"C:\Projects\02_academia\studies\icml-repro"))
 sys.path.insert(0, str(MAIN / "verdict_audit" / "readiness"))
 import p8_common as P8  # noqa: E402
 
