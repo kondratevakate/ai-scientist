@@ -19,10 +19,20 @@ marked `unverified` were not checked beyond the last commit date.
 
 ## Instruments
 
-| Instrument | Repository | State |
-|---|---|---|
-| bib-verify | `studies/bib-verify` | published, Zenodo concept DOI and Software Heritage archive recorded |
-| repro-judge | `studies/repro-judge` | calibrated 2026-10-17 against the official ICML 2026 verdicts on 53 logbooks; local only, no remote |
+| Instrument | Repository | Attached | State |
+|---|---|---|---|
+| bib-verify | `kondratevakate/bib-verify`, public | not yet | published, Zenodo concept DOI and Software Heritage archive recorded |
+| repro-judge | `kondratevakate/repro-judge`, private | `pipeline/instruments/logbook-judge` | calibrated 2026-10-17 against the official ICML 2026 verdicts on 53 logbooks; remote created 2026-10-27 |
+| agentic-systematic-review | `kondratevakate/agentic-systematic-review`, private | `pipeline/instruments/review-methodology` | under version control and pushed 2026-10-27; whether it is the general layer above the live reviews or a superseded draft is unresolved, see below |
+
+Each attached instrument also still exists as a standalone checkout under `studies/`.
+Same commit today, nothing keeps them aligned. One of the two should be retired.
+
+Unresolved on `agentic-systematic-review`: neither `voice-biomarkers` nor the
+AI-scientist survey references it. Both stand on their own protocols. Either it is the
+general methodology layer and the reviews should cite it, or it was superseded in
+practice and should be closed with a record in
+[`pipeline/closures.md`](pipeline/closures.md).
 
 ## Other active studies
 
