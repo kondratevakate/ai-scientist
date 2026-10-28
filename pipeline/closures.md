@@ -34,7 +34,7 @@ a drawer.
 
 ## Records
 
-Nine records, each traced to a file in this tree. The bibliographic claims inside the
+Eleven records, each traced to a file in this tree. The bibliographic claims inside the
 `novelty` reasons come from the novelty checks cited under `evidence` and have not been
 re-verified for this ledger; run bibliography verification over them before any of this
 is published.
@@ -136,18 +136,51 @@ is published.
 * `reopen` the status file names the weak points precisely, which is an unusually good
   restart position; the licence files it says are needed were never added
 
+### C10. ORBIT, prognostic world model on longitudinal ophthalmic data
+
+* `what` reproduce `2234` ORBIT in the challenge
+* `phase` Freeze, stopped at the data gate before any compute
+* `gate` data
+* `why` the paper's own Data Ethics Statement says ORBIT-LD is "derived from
+  retrospective ophthalmic archives at our institution", IRB-approved with a waiver of
+  informed consent. It is one hospital's own archive. The paper carries no availability
+  statement for the dataset at all: not a release promise, not an on-request clause
+* `evidence` the paper itself, `icml-repro/2234_ORBIT_A_Prognostic_World_.pdf`, appendix
+  A.1; text extracted from the PDF, not from a summary
+* `reopen` an availability statement from the authors; nothing else would change this
+
+### C11. PSE9 as an output of the patient-state project
+
+* `what` write the PSE9 abstract out of `patient-state-and-decisions`
+* `phase` Freeze, requirements and deadline pinned, nothing drafted
+* `gate` priority
+* `winner` the gated execution plan in that project's own README, which replaced the
+  document-driven queue on the same day
+* `why` `docs/PSE9.md` carries the header "ARCHIVED 2026-10-18: superseded by the gated
+  plan in README. Historical evidence only; commands and pending tasks below are not
+  authorization to resume." The file's own body still reads "No abstract/manuscript
+  drafted or submitted at this stage"
+* `evidence` `studies/patient-state-and-decisions/docs/PSE9.md`
+* `note` **This is not a closure of PSE9.** Two PSE9 abstracts were submitted on
+  2026-10-23, from the verdict-audit work in `studies/icml-repro` instead. What closed is
+  this project as the source of that abstract, which is a relocation, not an abandonment.
+  Recording it as "PSE9 dropped" would have been wrong
+
 ## Open on this ledger
 
 * C9 has gate `priority` with no winner named, which breaks the rule above. Resolve it
-  or change the gate.
-* Candidates seen in session notes but not yet traced to a file, so not recorded here:
-  ORBIT dropped on in-house hospital data; the PSE9 line removed from
-  patient-state-and-decisions on 2026-10-18; the no-go on clinical pilots from the same
-  reset. Harvest these from their own repositories before trusting the shape of this
-  ledger.
-* Nine records give a distribution of three `novelty`, three `data`, two `result`, one
-  `priority`. Eight of nine stopped on an external fact rather than a change of mind.
-  That is the property that makes this file data and not a diary, and it is worth
-  checking again once the count is past fifty.
-* Five of nine stopped at Map, which is the cheapest place to stop. Worth watching: if
-  that share falls over time, novelty checks are happening too late.
+  or change the gate. It is the only record still failing its own format.
+* The three candidates that were listed here unverified on 2026-10-27 have been checked
+  against their own files. Two became records, C10 and C11, and the third did not
+  survive: the blanket no-go on clinical pilots was itself superseded by protocol 015 in
+  that project's README, so it is not a standing closure. One of three session notes was
+  wrong and a second was wrong in its framing, which is the argument for the rule that
+  every record names the file it came from.
+* Eleven records: four `data`, three `novelty`, two `result`, two `priority`. Nine of
+  eleven stopped on an external fact rather than a change of mind. That is the property
+  that makes this file data and not a diary, and it is worth checking again once the
+  count is past fifty.
+* By phase: five stopped at Map, four at Freeze, two at Do, none later. Map is the
+  cheapest place to stop and Freeze is the second cheapest, so the shape is currently
+  healthy. Worth watching: if records start appearing at Do and Land, the gates upstream
+  are not being checked early enough.
