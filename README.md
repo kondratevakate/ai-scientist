@@ -24,21 +24,21 @@ where the claims are weak.
 
 Start here:
 
-1. `registers/prisma-records.md` - canonical record register.
-2. `synthesis/review-matrix.md` - compact comparison of core systems and critique papers.
-3. `synthesis/synthesis-taxonomy.md` - how the field is grouped.
-4. `protocol/extraction-forms.md` - fields to use when extracting a paper/repository.
-5. `logs/search-execution-log.md` - what searches were run and what is still missing.
-6. `sources/code-repos.md` - third-party repositories that were inspected locally, with
+1. `survey/registers/prisma-records.md` - canonical record register.
+2. `survey/synthesis/review-matrix.md` - compact comparison of core systems and critique papers.
+3. `survey/synthesis/synthesis-taxonomy.md` - how the field is grouped.
+4. `survey/protocol/extraction-forms.md` - fields to use when extracting a paper/repository.
+5. `survey/logs/search-execution-log.md` - what searches were run and what is still missing.
+6. `survey/sources/code-repos.md` - third-party repositories that were inspected locally, with
    provenance notes.
 
 Suggested workflow:
 
-1. Pick a record from `registers/prisma-screening-log.md`.
+1. Pick a record from `survey/registers/prisma-screening-log.md`.
 2. Read the primary paper/repository.
-3. Fill the relevant fields from `protocol/extraction-forms.md`.
-4. Update `synthesis/review-matrix.md` only after source verification.
-5. Keep AI-assisted steps in `logs/ai-assistance-log.md`.
+3. Fill the relevant fields from `survey/protocol/extraction-forms.md`.
+4. Update `survey/synthesis/review-matrix.md` only after source verification.
+5. Keep AI-assisted steps in `survey/logs/ai-assistance-log.md`.
 
 Do not treat tentative rows as final evidence. Many records are still pending
 full-text or code audit.
@@ -47,15 +47,31 @@ full-text or code audit.
 
 ```text
 .
-├── protocol/    # review protocol, requirements, eligibility, extraction forms
-├── registers/   # PRISMA records, screening, deduplication, source inventory
-├── synthesis/   # review matrix, taxonomy, primary notes, critique synthesis
-├── sources/     # repository/source audits, watchlists, market/context tracking
-├── logs/        # search execution and AI-assistance logs
+├── survey/        OBJECT LEVEL: what other people built
+│   ├── protocol/      review protocol, requirements, eligibility, extraction forms
+│   ├── registers/     PRISMA records, screening, deduplication, source inventory
+│   ├── synthesis/     review matrix, taxonomy, primary notes, critique synthesis
+│   ├── sources/       repository/source audits, watchlists, market/context tracking
+│   ├── logs/          search execution and AI-assistance logs
+│   ├── searches/      raw search exports (git-ignored)
+│   ├── open-source/   clones of the systems under review (git-ignored, 1.7 GB)
+│   └── ml-venues-2024-2026-validated-list/
+│                      validated list of AI-scientist papers at twelve venue-years
+├── pipeline/      INSTRUMENT LEVEL: the five phases this work runs on
+│   ├── README.md      Map, Freeze, Do, Land, Close; instruments; obligations
+│   ├── closures.md    why work stopped, and how far it got
+│   ├── map/           idea-selection material, evidence for the closure records
+│   └── instruments/   submodules: logbook judge, review methodology
+├── STAGES.md      which study is at which phase, across the whole tree
 ├── README.md
 ├── LICENSE
-└── public-domain / third-party governance files
+└── third-party governance files
 ```
+
+The two levels are deliberately separate. `survey/` is the review of other people's
+systems; `pipeline/` is how this work is itself conducted. A protocol under `survey/`
+belongs to a system being reviewed; a protocol under `pipeline/` is one of ours. Keeping
+them apart is the whole reason the project reads as one thing rather than two.
 
 ## Purpose
 
@@ -72,13 +88,15 @@ Success for the current phase: turn incoming resources into a clean source inven
 
 ## Current state
 
-The project folder is initialized. The first source batch has been logged in `registers/source-inventory.md`. Primary notes for Co-Scientist and Robin are in `synthesis/primary-paper-notes.md`; broader candidate sources are in `registers/bibliography-backlog.md`; market/lab tracking is separated into `sources/appendix-labs-and-market-watch.md`; cloned repositories are indexed in `sources/code-repos.md`.
+The project folder is initialized. The first source batch has been logged in `survey/registers/source-inventory.md`. Primary notes for Co-Scientist and Robin are in `survey/synthesis/primary-paper-notes.md`; broader candidate sources are in `survey/registers/bibliography-backlog.md`; market/lab tracking is separated into `survey/sources/appendix-labs-and-market-watch.md`; cloned repositories are indexed in `survey/sources/code-repos.md`.
 
-The 2026 quality and AI-assistance requirements layer is defined in `protocol/systematic-review-requirements-2026.md`. It constrains the protocol with PRISMA/PRISMA-ScR, Cochrane/JBI/Campbell, AMSTAR 2, ROBIS, GRADE-style evidence certainty, reproducibility grading, and AI-use disclosure requirements.
+The 2026 quality and AI-assistance requirements layer is defined in `survey/protocol/systematic-review-requirements-2026.md`. It constrains the protocol with PRISMA/PRISMA-ScR, Cochrane/JBI/Campbell, AMSTAR 2, ROBIS, GRADE-style evidence certainty, reproducibility grading, and AI-use disclosure requirements.
 
 Update 2026-06-15: the PRISMA register is at v0.2 with 66 records. Seven high-priority sources were promoted from ToolUniverse/targeted verification into screening: Medical AI Scientist, EvoScientist, omics AI scientist benchmark, SoundnessBench, AI Scientists Fail Without Strong Implementation Capability, Hidden Pitfalls of AI Scientist Systems, and Agentic AI Scientists Are Not Built For Autonomous Scientific Discovery. `logs/ai-assistance-log.md` was added, and `protocol/extraction-forms.md` now includes benchmark false-negative risk, trajectory, cost, sandbox, tool-permission, and skill/tool governance fields.
 
 Update 2026-07-01: the repository was reorganized into `protocol/`, `registers/`, `synthesis/`, `sources/`, and `logs/`. Claude Science was added as an appendix/context record for Anthropic's scientific workbench product, separate from peer-reviewed core AI Scientist evidence.
+
+Update 2026-10-27: the repository was split into `survey/` (this review) and `pipeline/` (the five-phase model this work runs on), and `STAGES.md` was added as the registry of which study is at which phase. Paths quoted in the dated updates above are pre-split: prefix them with `survey/`.
 
 ## Public-domain compilation status
 
@@ -89,7 +107,7 @@ taxonomies, screening decisions, extraction forms, and normalized metadata.
 It does not cover third-party code, papers, abstracts, datasets, model weights,
 logos, trademarks, raw database/API exports, or cloned repositories. For a clean
 public release, publish the markdown compilation and metadata files only.
-`open-source/` and `searches/` are excluded by default in `.gitignore`.
+`survey/open-source/` and `survey/searches/` are excluded by default in `.gitignore`.
 
 See:
 
@@ -132,4 +150,4 @@ Initial blockers / open loops:
 
 ## Next action
 
-Promote backlog items into `registers/source-inventory.md` only after source verification, starting with Sakana AI Scientist, Stanford Virtual Lab Nature paper, FutureHouse Kosmos, ToolUniverse/Biomni/Paper2Agent, and benchmark papers.
+Promote backlog items into `survey/registers/source-inventory.md` only after source verification, starting with Sakana AI Scientist, Stanford Virtual Lab Nature paper, FutureHouse Kosmos, ToolUniverse/Biomni/Paper2Agent, and benchmark papers.

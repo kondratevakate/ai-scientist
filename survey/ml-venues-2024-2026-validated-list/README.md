@@ -5,7 +5,7 @@ ICML 2026 reproduction audit. Nothing is pushed; all commits are local.
 
 ## Where things are
 
-* This folder (`ai-scientist/ml-venues-2024-2026-validated-list/`) holds the code, codes and results:
+* This folder (`ai-scientist/survey/ml-venues-2024-2026-validated-list/`) holds the code, codes and results:
   * `PROTOCOL.md`: the keyword screen rule and Amendment 1 (validation codebook), both frozen before use.
   * `screen.py`: keyword screen; `code.py`: candidate pool, coder agreement, adjudication, validated list.
   * `CODER_PROMPT.md`: the blind coder prompt.
